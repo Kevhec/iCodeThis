@@ -1,0 +1,41 @@
+@use '../base/variables' as v;
+
+.history {
+
+  &__table {
+    width: 100%;
+    text-align: left;
+    margin: v.rem(40) 0 v.rem(20);
+
+    tbody > tr {
+      height: v.rem(45);
+      border-radius: 10px;
+      transition: box-shadow 150ms ease;
+
+      &:hover {
+        box-shadow: 0px 4px 10px #1a194c3b;
+        cursor: pointer;
+      }
+      
+    }
+  }
+
+  &__data {
+    padding: v.rem(8) v.rem(10);
+    color: v.$cl-secondary;
+
+    &--header {
+      font-weight: v.$fw-400;
+      color: v.$cl-text;
+    }
+  }
+
+  &__load-more {
+    color: v.$cl-primary;
+    padding-left: v.rem(8);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

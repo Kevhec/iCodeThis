@@ -1,0 +1,22 @@
+@use '../base/variables' as var;
+
+.header {
+    text-align: center;
+    line-height: 1.2;
+    @include var.mdq {
+        text-align: left;
+    }
+
+    &__container {
+        padding: var.$sz-50 var.$sz-20;
+        @include var.mdq {
+            padding: 0;
+            margin-bottom: var.$sz-40;
+        }
+    }
+
+    &__tag {
+        margin-bottom: var.$sz-10;
+        font-size: var.$fs-20;
+    }
+}

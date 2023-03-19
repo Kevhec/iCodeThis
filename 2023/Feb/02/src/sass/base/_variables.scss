@@ -1,0 +1,27 @@
+$cl-primary: #151e4b;
+$cl-accent: rgba(192, 199, 235, .5);
+$cl-white: #ffffff;
+
+$ff-roboto: 'Roboto', sans-serif;
+$ff-vollkorn: 'Vollkorn', serif;
+$fs-16: 1rem;
+$fs-20: 1.25rem;
+$fs-25: 1.563rem;
+$fs-30: 1.875rem;
+$fs-40: 2.5rem;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+$sz-10: 0.625rem;
+$sz-20: 1.25rem;
+$sz-30: 1.875rem;
+$sz-40: 2.5rem;
+$sz-50: 3.125rem;
+
+@mixin mdq {
+    @media screen and (min-width: 64em){
+        @content
+    }
+}

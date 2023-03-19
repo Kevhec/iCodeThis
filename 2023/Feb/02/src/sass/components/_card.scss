@@ -1,0 +1,17 @@
+@use '../base/variables' as var;
+
+.card {
+    margin-bottom: var.$sz-30;
+    padding: 0 var.$sz-20;
+    @include var.mdq {
+        padding: 0;
+    }
+
+    &__heading {
+        margin-bottom: var.$sz-10;
+    }
+
+    &__content {
+        font-size: var.$fs-16;
+    }
+}

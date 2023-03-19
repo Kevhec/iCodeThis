@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis 3-18</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./src/scss/main.scss" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__main-section">
+        <header class="app__header">
+          <div class="user">
+            <figure class="user__avatar">
+              <img src="https://ui-avatars.com/api/?name=Ildiko+Gaspar&background=random" alt="Profile picture of Ildiko Gaspar" />
+            </figure>
+            <div class="user__info">
+              <p class="user__name">Ildiko Gaspar</p>
+              <p class="user__at">@igaspar</p>
+            </div>
+          </div> <!-- user -->
+          <nav>
+            <ul class="main-nav">
+              <li class="link">
+                <a href="#" class="link__text">
+                  <figure class="link__icon">
+                    <img src="./src/assets/icon-general.svg" />
+                  </figure>
+                  General
+                </a>
+              </li> <!-- link - General -->
+              <li class="link">
+                <a href="#" class="link__text">
+                  <figure class="link__icon">
+                    <img src="./src/assets/icon-password.svg" />
+                  </figure>
+                  Password
+                </a>
+              </li> <!-- link - Password -->
+              <li class="link">
+                <a href="#" class="link__text">
+                  <figure class="link__icon">
+                    <img src="./src/assets/icon-invitations.svg" />
+                  </figure>
+                  Invitations
+                </a>
+              </li> <!-- link - Invitations -->
+              <li class="link link--current">
+                <a href="#" class="link__text">
+                  <figure class="link__icon">
+                    <img src="./src/assets/icon-billing.svg" />
+                  </figure>
+                  Billing
+                </a>
+              </li> <!-- link - Billing -->
+              <li class="link">
+                <a href="#" class="link__text">
+                  <figure class="link__icon">
+                    <img src="./src/assets/icon-apps.svg" />
+                  </figure>
+                  Apps
+                </a>
+              </li> <!-- link - Apps -->
+            </ul>
+          </nav> <!-- nav -->
+        </header>
+        <main class="app__main">
+          <h1 class="app__main-heading">Billing</h1>
+          <section class="history">
+            <div class="description">
+              <h2 class="description__heading">Order History</h2>
+              <p class="description__text">Manage billing information and view receips</p>
+            </div> <!-- description -->
+            <table class="history__table">
+              <colgroup>
+                <col span="1" style="width: 30%;" />
+                <col span="1" style="width: 50%;" />
+                <col span="1" style="width: 20%;" />
+              </colgroup>
+              <thead class="history__data-head-container">
+                <tr>
+                  <th class="history__data history__data--header">Date</th>
+                  <th class="history__data history__data--header">Type</th>
+                  <th class="history__data history__data--header">Receipt</th>
+                </tr>
+              </thead>
+              <tbody class="history__data-body-container">
+                <tr>
+                  <td class="history__data">Oct.21, 2021</td>
+                  <td class="history__data">Pro Annual</td>
+                  <td class="history__data">
+                    <button class="button">Download</button>
+                  </td>
+                </tr> <!-- body row -->
+                <tr>
+                  <td class="history__data">Aug.21, 2021</td>
+                  <td class="history__data">Pro Portfolio</td>
+                  <td class="history__data">
+                    <button class="button">Download</button>
+                  </td>
+                </tr> <!-- body row -->
+                <tr>
+                  <td class="history__data">July.21, 2021</td>
+                  <td class="history__data">Sponsored Post</td>
+                  <td class="history__data">
+                    <button class="button">Download</button>
+                  </td>
+                </tr> <!-- body row -->
+                <tr>
+                  <td class="history__data">Jun.21, 2021</td>
+                  <td class="history__data">Sponsored Post</td>
+                  <td class="history__data">
+                    <button class="button">Download</button>
+                  </td>
+                </tr> <!-- body row -->
+              </tbody>
+            </table>
+            <a href="#" class="history__load-more">Load more</a>
+          </section>
+          <section class="payment">
+            <div class="description">
+              <h2 class="description__heading">Order History</h2>
+              <p class="description__text">Manage billing information and view receips</p>
+            </div> <!-- description -->
+            <div class="payment__method">
+              <figure class="payment__logo">
+                <img src="./src/assets/VISA-Logo.png" alt="Logo of Visa payment method">
+              </figure>
+              <p class="payment__description">Visa ending in 2255</p>
+              <button class="button">Remove</button>
+            </div>
+          </section>
+        </main>
+        <aside class="app__aside">
+          <div class="plan">
+            <p>Your plan</p>
+            <div class="plan__info">
+              <h2 class="plan__name">Pro Annual</h2>
+              <p class="plan__renewal">Renews on <span id="plan__renewal--date">Nov. 2021</span></p>
+            </div>
+            <button class="button button--textWhite">Cancel suscription</button>
+            
+          </div>
+        </aside>
+      </div> <!-- app__main-section -->
+      <footer class="app__footer">
+        <div class="link">
+          <a href="#" class="link__text">
+            <figure class="link__icon">
+              <img src="./src/assets/icon-logout.svg" />
+            </figure>
+            Log out
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

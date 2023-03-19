@@ -1,0 +1,33 @@
+@use '../base/variables' as var;
+
+.main {
+    &__container {
+        @include var.mdq {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var.$sz-40;
+        }
+    }
+
+    &__content {
+        margin-bottom: var.$sz-50;
+    }
+
+    &__image {
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: var.$sz-30;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__grid {
+        @include var.mdq {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var.$sz-40;
+        }
+    }
+}

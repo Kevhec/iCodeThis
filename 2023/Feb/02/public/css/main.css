@@ -1,0 +1,215 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  min-height: 100vh;
+}
+
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #151e4b;
+}
+@media screen and (min-width: 64em) {
+  body {
+    padding: 5% 0;
+  }
+}
+
+[class$=__container] {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+[class$=__button] {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: #ffffff;
+  border: 2px solid #151e4b;
+  border-radius: 10px;
+  color: #151e4b;
+  font-weight: 500;
+  cursor: pointer;
+}
+[class$=__button]:is(:hover, :active) {
+  background-color: rgba(192, 199, 235, 0.5);
+}
+@media screen and (min-width: 64em) {
+  [class$=__button] {
+    max-width: 150px;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Vollkorn", serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.card {
+  margin-bottom: 1.875rem;
+  padding: 0 1.25rem;
+}
+@media screen and (min-width: 64em) {
+  .card {
+    padding: 0;
+  }
+}
+.card__heading {
+  margin-bottom: 0.625rem;
+}
+.card__content {
+  font-size: 1rem;
+}
+
+.aside {
+  padding: 3.125rem 1.25rem;
+  background-color: #151e4b;
+  color: #ffffff;
+}
+@media screen and (min-width: 64em) {
+  .aside {
+    border-radius: 10px;
+    max-height: 60%;
+    padding: 2.5rem;
+  }
+}
+.aside__heading {
+  margin-bottom: 0.625rem;
+}
+.aside__button {
+  margin-top: 1.875rem;
+}
+
+.header {
+  text-align: center;
+  line-height: 1.2;
+}
+@media screen and (min-width: 64em) {
+  .header {
+    text-align: left;
+  }
+}
+.header__container {
+  padding: 3.125rem 1.25rem;
+}
+@media screen and (min-width: 64em) {
+  .header__container {
+    padding: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+.header__tag {
+  margin-bottom: 0.625rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 64em) {
+  .main__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+  }
+}
+.main__content {
+  margin-bottom: 3.125rem;
+}
+.main__image {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.875rem;
+}
+.main__image img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 64em) {
+  .main__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}

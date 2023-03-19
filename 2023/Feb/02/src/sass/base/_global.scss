@@ -1,0 +1,53 @@
+@use "variables" as var;
+
+body {
+  font-family: var.$ff-roboto;
+  color: var.$cl-primary;
+  @include var.mdq {
+      padding: 5% 0;
+  }
+}
+
+[class$="__container"] {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+[class$="__button"] {
+  width: 100%;
+  padding: var.$sz-10;
+  background-color: var.$cl-white;
+  border: 2px solid var.$cl-primary;
+  border-radius: 10px;
+  color: var.$cl-primary;
+  font-weight: var.$fw-500;
+  cursor: pointer;
+
+  &:is(:hover, :active) {
+    background-color: var.$cl-accent;
+  }
+
+  @include var.mdq {
+    max-width: 150px;
+  }
+}
+
+h1,
+h2 {
+  font-family: var.$ff-vollkorn;
+}
+
+h1 {
+  font-size: var.$fs-40;
+  font-weight: var.$fw-600;
+}
+
+h2 {
+  font-size: var.$fs-20;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: var.$fs-16;
+}

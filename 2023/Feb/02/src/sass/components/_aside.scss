@@ -1,0 +1,20 @@
+@use '../base/variables' as var;
+
+.aside {
+    padding: var.$sz-50 var.$sz-20;
+    background-color: var.$cl-primary;
+    color: var.$cl-white;
+    @include var.mdq {
+        border-radius: 10px;
+        max-height: 60%;
+        padding: var.$sz-40;
+    }
+
+    &__heading  {
+        margin-bottom: var.$sz-10;
+    }
+
+    &__button {
+        margin-top: var.$sz-30;
+    }
+}

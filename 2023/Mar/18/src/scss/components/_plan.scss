@@ -1,0 +1,23 @@
+@use '../base/variables' as v;
+
+.plan {
+  background-color: v.$cl-primary;
+  color: v.$cl-white;
+  padding: 28px;
+  border-radius: 15px;
+  font-size: v.rem(14);
+  transform: translateY(140px);
+
+  &__info {
+    margin: v.rem(10) 0;
+  }
+
+  &__name {
+    font-size: v.rem(20);
+    color: v.$cl-app-background;
+  }
+
+  &__renewal {
+    font-size: v.rem(12);
+  }
+}

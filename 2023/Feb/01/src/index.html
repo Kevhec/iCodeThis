@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>I Code This!</title>
+</head>
+<body>
+
+<main class="component">
+  <div class="component__header">
+    <button class="component__lightModeButton">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="component__icon component__icon--moon" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="component__icon component__icon--sun hidden" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"/>
+      </svg>
+    </button>
+    <figure class="component__logo">
+      <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" rx="15" fill="white"/>
+        <line x1="16" y1="25" x2="16" y2="55" stroke="#4e81f2" stroke-width="6" stroke-linecap="round"/>
+        <line x1="33" y1="20" x2="33" y2="60" stroke="#4e81f2" stroke-width="6" stroke-linecap="round"/>
+        <line x1="50" y1="18" x2="50" y2="62" stroke="#4e81f2" stroke-width="6" stroke-linecap="round"/>
+        <line x1="67" y1="20" x2="67" y2="60" stroke="#4e81f2" stroke-width="6" stroke-linecap="round"/>
+        <line x1="84" y1="25" x2="84" y2="55" stroke="#4e81f2" stroke-width="6" stroke-linecap="round"/>
+        <path d="M 16 72 C 35 85, 65 85, 84 72" stroke="#4e81f2" stroke-width="6" stroke-linecap="round" fill="transparent"/>
+      </svg>
+    </figure>
+    <div class="component__title">
+      <h1 class="component__heading">Untercom</h1>
+      <p class="component__accent">APP</p>
+    </div>
+    <p class="component__description">Convert your hottest leads</p>
+  </div> <!-- Component header -->
+  <div class="component__content">
+    <nav class="component__nav">
+      <a href="#" class="component__navLink">About</a>
+      <a href="#" class="component__navLink">Settings</a>
+      <a href="#" class="component__navLink">Help</a>
+    </nav>
+    <button class="component__goToAppButton">
+      Go to App
+    </button>
+  </div>
+</main>
+
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+
+.user {
+  display: flex;
+  gap: 10px;
+  margin-bottom: v.rem(50);
+
+  &__avatar {
+    width: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-weight: v.$fw-700;
+    color: v.$cl-secondary;
+  }
+
+  &__at {
+    font-weight: v.$fw-300;
+  }
+}

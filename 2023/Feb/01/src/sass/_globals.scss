@@ -1,0 +1,28 @@
+@use 'variables' as var;
+
+body {
+    font-family: var.$ff-roboto;
+    font-size: var.$fs-16;
+    display: grid;
+    place-content: center;
+    background-color: var.$cl-primary;
+    transition: background-color 200ms ease-out;
+}
+
+h1 {
+    font-size: var.$fs-20;
+    font-weight: var.$fw-500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    outline: transparent;
+}
+
+.hidden {
+    opacity: 0;
+}

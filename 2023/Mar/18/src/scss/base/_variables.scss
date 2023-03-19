@@ -1,0 +1,19 @@
+$cl-primary: #ee4d38;
+$cl-secondary: #1a194c;
+$cl-text: #656491;
+$cl-white: #ffffff;
+$cl-body-background: #e8e8fd;
+$cl-app-background: #fbfbff;
+$cl-button-border: #bbbbbb;
+
+/* Convert px to rem */
+@function rem($px) {
+  $result: calc($px / 16) + rem;
+  @return $result;
+}
+
+/* Typography */
+$ff-poppins: 'Poppins', sans-serif;
+$fw-300: 300;
+$fw-400: 400;
+$fw-700: 700;

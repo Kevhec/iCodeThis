@@ -1,0 +1,29 @@
+@use './variables' as v;
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: v.$cl-body-background;
+  font-family: v.$ff-poppins;
+  padding: 30px;
+  color: v.$cl-text;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2{
+  color: v.$cl-secondary;
+}
+
+h2 {
+  font-size: v.rem(16);
+}

@@ -1,0 +1,105 @@
+@use 'variables' as var;
+
+.component {
+    min-width: 300px;
+    border-radius: 5px;
+    background-color: var.$cl-white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 200ms ease-out;
+
+    &__header {
+        background-color: var.$cl-secodary;
+        padding: 20px 20px 40px;
+        color: var.$cl-white;
+    }
+
+    &__lightModeButton {
+        float: right;
+        background-color: unset;
+        border: unset;
+        padding: 0;
+        width: var.$sz-40;
+        height: var.$sz-40;
+        cursor: pointer;
+        position: relative;
+
+        svg,
+        svg > * {
+            pointer-events: none;            
+        }
+    }
+
+    &__icon {
+        transition: opacity 200ms ease-in;
+        &--moon {
+            width: 70%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    }
+
+    
+
+    &__logo {
+        width: 50px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        gap: var.$sz-5;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__heading {
+        line-height: 1;
+    }
+
+    &__accent {
+        font-size: var.$fs-14;
+        line-height: 1;
+        padding: 3px 5px;
+        border-radius: 5px;
+        background-color: var.$cl-accent;
+    }
+
+    &__description {
+        font-size: var.$fs-16;
+    }
+
+    &__content {
+        padding: 40px;
+        color: var.$cl-primary;
+    }
+    
+    &__nav {
+        padding: 10px 0;
+        margin-bottom: 30px;
+    }
+
+    &__navLink {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    &__goToAppButton {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #cbcbff;
+        border-radius: 8px;
+        background-color: transparent;
+        color: inherit;
+        cursor: pointer;
+
+        &:is(:hover, :active) {
+            background-color: #f8f8f8;
+        }
+    }
+
+}

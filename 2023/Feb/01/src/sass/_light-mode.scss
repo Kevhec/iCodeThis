@@ -1,0 +1,20 @@
+@use 'variables' as var;
+
+body.light-mode {
+    background-color: var.$cl-lightBlue;
+}
+
+.light-mode {
+    .component {
+        background-color: var.$cl-primary;
+
+        &__nav {
+            color: var.$cl-lightBlue;
+        }
+
+        &__goToAppButton {
+            color: var.$cl-white;
+            border-color: #373746;
+        }
+    }
+}
