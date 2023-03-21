@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="https://www.icodethis.com/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main class="card">
+      <div class="alert">
+        <p class="alert__text">Thanks for your donation!</p>
+      </div>
+      <button class="card__close-button">×</button>
+      <figure class="card__icon">
+        <img src="./assets/pink-ribbon.png" alt="Pink ribbon; symbol of breast cancer awareness">
+      </figure>
+      <div class="card__content">
+        <div class="card__description">
+          <h1 class="card__heading">Your gift changes lifes</h1>
+          <p class="card__text">Pledge your support today so that we can help more women in 2019.</p>
+        </div>
+        <form id="donation-form" class="card__form">
+          <div class="input-container">
+            <input type="radio" name="amount" id="5" value="5">
+            <label class="card__label" for="5">
+              $5
+            </label>
+          </div>
+          <div class="input-container">
+            <input type="radio" name="amount" id="10" value="10" checked>
+            <label class="card__label" for="10">
+              $10
+            </label>
+          </div>
+          <div class="input-container">
+            <input type="radio" name="amount" id="15" value="15">
+            <label class="card__label" for="15">
+              $15
+            </label>
+          </div>
+          <div class="card__text-input-container">
+            <label class="card__label card__label--flex" for="variable" id="textInputLabel">
+              $
+            </label>
+            <input class="card__text-input" type="text" name="amount" id="variable" placeholder="Amount">
+          </div>
+        </form>
+        <button class="card__submit-button" type="submit" form="donation-form">DONATE</button>
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
