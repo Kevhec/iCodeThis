@@ -79,7 +79,7 @@ body {
   margin-inline: auto;
   border-radius: 20px;
   padding: 30px;
-  background-image: url(./assets/background.svg);
+  background-image: url(https://raw.githubusercontent.com/Kevhec/iCodeThis/04a97e6bff8d8850f526a16fc58cf99172fe5793/2023/Mar/19/assets/background.svg);
   background-repeat: no-repeat;
   background-position: top left;
   position: relative;
@@ -270,7 +270,7 @@ input[type="radio"]:checked + .card__label {
   left: 0;
   right: 0;
   background-color: #fff;
-  background-image: url(./assets/background.svg);
+  background-image: url(https://raw.githubusercontent.com/Kevhec/iCodeThis/04a97e6bff8d8850f526a16fc58cf99172fe5793/2023/Mar/19/assets/background.svg);
   background-repeat: no-repeat;
   background-position: top left;
   border-radius: 20px;
